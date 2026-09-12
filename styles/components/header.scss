@@ -1,0 +1,111 @@
+@use '../abstracts/shares.scss' as *;
+
+#home {
+
+    .nav {
+        .navbar-brand {
+            width: 8%;
+        }
+        .dropdown-toggle{
+            &::after{
+                display: none;
+            }
+        }
+        .nav-link {
+            color: $firstColor;
+            font-weight: bold;
+            position: relative;
+            padding: 0%;
+            margin-inline:10px ;
+            
+            &::before,
+            &::after{
+                content: '';
+                display: block;
+                width: 0%;
+                height: 2px;
+                position: absolute;
+
+                top: 52%;
+                background-color: #ee5e00;
+                margin-top: 10px;
+                transition-duration: .5s;
+
+            }
+
+            &::before {
+                left: 50%;
+            }
+
+            &::after {
+                right: 50%;
+            }
+
+            &:hover, &.active {
+                &::before, &::after {
+                    width: 50%;
+                }
+
+            }
+            
+        }
+    }
+
+    header {
+        padding-block: 15px;
+
+        h1 {
+            font-size: 50px;
+        }
+
+        h1,
+        i {
+            color: $firstColor;
+        }
+
+        h6 {
+            color: $secondColor;
+        }
+
+        i {
+            margin-right: 12px;
+
+        }
+
+        header .container .animate img:nth-of-type(3) {
+            animation-name: animate-arrow-third;
+        }
+
+        .animate {
+
+            position: absolute;
+            z-index: 2;
+            left: 50%;
+            transform: translate(-50%);
+            bottom: 10%;
+            width: 24px;
+            height: 24px;
+
+            img {
+                width: 24px;
+                position: absolute;
+                top: -2px;
+                left: 0;
+                animation-duration: 2s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+                animation-direction: normal;
+            }
+        }
+
+        .wave-img {
+            position: absolute;
+            bottom: -.5px;
+            left: 0;
+            transform: rotate(180deg);
+            width: 100%;
+        }
+
+    }
+
+}
