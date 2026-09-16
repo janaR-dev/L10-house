@@ -12472,13 +12472,13 @@ section h2 {
   }
 }
 #why-us .container .row .ele:nth-of-type(1) .img {
-  background-image: url("./images/images/best.jpg");
+  background-image: url(./images/images/best.jpg);
 }
 #why-us .container .row .ele:nth-of-type(2) .img {
-  background-image: url("./images/images/solutions.jpg");
+  background-image: url(./images/images/solutions.jpg);
 }
 #why-us .container .row .ele:nth-of-type(3) .img {
-  background-image: url("./images/images/teamwork.jpg");
+  background-image: url(./images/images/teamwork.jpg);
 }
 #why-us .container .row .ele .item {
   position: relative;
@@ -12542,7 +12542,7 @@ section h2 {
 #langs .part1 {
   width: 100%;
   height: 300px;
-  background-image: url("./images/images/youth.jpg");
+  background-image: url(./images/images/youth.jpg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -12707,7 +12707,7 @@ section h2 {
 
 #contact {
   position: relative;
-  background-image: url("./images/images/contact-bg.png");
+  background-image: url(./images/images/contact-bg.png);
   background-position: center;
   background-size: cover;
 }
