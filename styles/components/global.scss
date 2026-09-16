@@ -15,6 +15,13 @@ body {
 }
 
 section {
+     @include responsive(350) {
+padding-inline: 12px;
+    }
+     @include responsive(1050) {
+padding-inline: 5px;
+
+    }
     .title {
     width: fit-content;
     margin: auto;
@@ -41,8 +48,20 @@ section {
 }
  h2 {
     color: $secondColor;
-    font-size: 40px;
     font-weight: 700;
+    @include responsive(350) {
+            font-size: 30px;
+
+    }
+     @include responsive(650) {
+            font-size: 35px;
+
+    }
+    @include responsive(1050) {
+            font-size: 40px;
+
+    }
+
 }
 }
 .popup {

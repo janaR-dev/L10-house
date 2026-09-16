@@ -91,10 +91,25 @@
     align-items: center;
     flex-direction: row;
     .box {
-    width: 600px;
-    height: 400px;
+   
     border-radius: 10px;
     overflow: hidden;
+    @include responsive(350) {
+         width: 300px;
+    height: 200px;
+    }
+@include responsive(450) {
+     width: 350px;
+    height: 250px;
+}
+@include responsive(450) {
+     width: 600px;
+    height: 400px;
+}
+@include responsive(1200) {
+    width: 700px;
+    height: 450px;
+}
   
 iframe {
     width: 100%;

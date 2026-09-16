@@ -2,9 +2,11 @@
 @keyframes animate-move {
     from {
         transform: translateY(0);
+        opacity: 1;
     }
 
     to {
         transform: translateY(var(--end-position));
+        opacity: 0.2;
     }
 }

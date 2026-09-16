@@ -4,23 +4,37 @@
     .container {
         .row {
             .ele {
+                @include responsive(350) {
+                    margin-block: 20px;
+                }
+
+                @include responsive(650) {
+                    margin-block: 15px;
+                }
+
+                @include responsive(1250) {
+                    margin-block: 5px;
+                }
+
                 &:nth-of-type(1) {
                     .img {
                         background-image: url('../../images/images/best.jpg');
                     }
-                
+
                 }
-                 &:nth-of-type(2) {
+
+                &:nth-of-type(2) {
                     .img {
                         background-image: url('../../images/images/solutions.jpg');
                     }
-                
+
                 }
-                 &:nth-of-type(3) {
+
+                &:nth-of-type(3) {
                     .img {
                         background-image: url('../../images/images/teamwork.jpg');
                     }
-                
+
                 }
 
 

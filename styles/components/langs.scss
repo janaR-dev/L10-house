@@ -35,6 +35,14 @@
             .title {
                 h2 {
                     color: #fff;
+
+                    @include responsive(350) {
+                        font-size: 20px;
+                    }
+
+                    @include responsive(650) {
+                        font-size: 30px;
+                    }
                 }
 
                 &::after {
@@ -69,10 +77,17 @@
 
     .owl-item {
         .item {
-            width: 75%;
+           
             display: flex;
             justify-content: center;
             align-items: center;
+
+            @include responsive(350) { width: 55%;
+            margin: auto;}
+
+            @include responsive(650) {width: 65%;
+            margin-inline: 8px;}
+            @include responsive(1050) { width: 75%;}
         }
     }
 }
@@ -107,15 +122,25 @@
 
 .langs-popup {
     .box {
-        width: 40%;
         margin: 0;
         border-radius: 10px 0 0 10px;
         position: absolute;
         top: 0;
         right: 0%;
         padding: 30px;
+        @include responsive(350) {        width: 80%;
+}
 
-       .fa-window-close {
+@include responsive(450) {width: 75%}
+
+@include responsive(650) {width: 70%}
+
+@include responsive(850) {width: 50%}
+
+@include responsive(1050) {        width: 40%;
+}
+
+        .fa-window-close {
             font-size: 20px;
             position: absolute;
             top: 10px;

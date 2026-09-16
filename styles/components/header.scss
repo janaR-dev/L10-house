@@ -8,15 +8,66 @@
         position: fixed;
         width: 100%;
         z-index: 20;
+
         .navbar {
             background-color: transparent;
             transition-duration: .5s;
+            padding-inline: 0px;
 
+            @include responsive(350) {
+                .navbar-collapse {
+
+                    background-color: white;
+                    text-align: center;
+                    border-radius: 15px;
+
+                }
+            }
+
+            @include responsive(1050) {
+                .navbar-collapse {
+                    background-color: transparent;
+                }
+            }
+
+
+            @include responsive(450) {
+                background-color: rgba(196, 191, 191, 0.614);
+            }
+
+            @include responsive(650) {
+                background-color: transparent;
+            }
+
+            @include responsive(850) {}
+
+            @include responsive(1050) {}
+
+            @include responsive(1200) {}
         }
 
         &.scrolled {
             .navbar-brand {
-                width: 10%;
+                @include responsive(350) {
+                    width: 29%;
+                }
+
+                @include responsive(650) {
+                    width: 20%;
+                }
+
+                @include responsive(850) {
+                    width: 18%;
+                }
+
+                @include responsive(1050) {
+                    width: 15%;
+                }
+
+                @include responsive(1200) {
+                    width: 10%;
+                }
+
             }
 
             .navbar {
@@ -25,8 +76,28 @@
         }
 
         .navbar-brand {
-            width: 8%;
             transition-duration: .5s;
+
+            @include responsive(350) {
+                width: 25%;
+            }
+
+            @include responsive(650) {
+                width: 25%;
+            }
+
+            @include responsive(850) {
+                width: 20%;
+            }
+
+            @include responsive(1050) {
+                width: 12%;
+            }
+
+            @include responsive(1200) {
+                width: 8%;
+            }
+
 
         }
 
@@ -45,7 +116,22 @@
             font-weight: bold;
             position: relative;
             padding: 0%;
-            margin-inline: 10px;
+           
+
+            @include responsive(350) {
+                margin-block: 10px;
+            }
+
+            @include responsive(1050) {
+                font-size: 15px;
+                margin-inline: 8px;
+            }
+             @include responsive(1200) {
+                font-size: 15px;
+                 margin-inline: 10px;
+             }
+
+
 
             &::before,
             &::after {
@@ -89,12 +175,40 @@
         justify-content: center;
         align-items: center;
 
+        @include responsive(450) {}
+
         .container {
             padding-top: 50px;
         }
 
         h1 {
             font-size: 50px;
+
+            @include responsive(350) {
+                font-size: 30px;
+            }
+
+            @include responsive(850) {
+                font-size: 50px;
+            }
+            
+        }
+
+        .item {
+            img {
+
+                @include responsive(450) {
+                    width: 50%;
+                }
+
+                @include responsive(850) {
+                    width: 75%;
+                }
+
+                @include responsive(1050) {
+                    width: 80%;
+                }
+            }
         }
 
         h1,

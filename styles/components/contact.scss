@@ -45,11 +45,17 @@
             }
 
             .box {
-                width: 350px;
+                
                 margin: auto;
                 background-color: #fff;
                 border-radius: 10px;
                 height: 100%;
+
+                @include responsive(350) {width: 300px;}
+
+             
+
+                @include responsive(1050) {width: 350px;}
 
                 button {
                     background-color: $secondColor;
