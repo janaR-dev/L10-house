@@ -12829,7 +12829,7 @@ section h2 {
 #services #Video {
   width: 100%;
   height: 300px;
-  background-image: url("./images/images/video-bg.jpg");
+  background-image: url(./images/images/video-bg.jpg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
