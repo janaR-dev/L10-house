@@ -12097,8 +12097,19 @@ textarea.form-control-lg {
   width: 100%;
   z-index: 20;
 }
+#home-sec .nav .navbar {
+  background-color: transparent;
+  transition-duration: 0.5s;
+}
+#home-sec .nav.scrolled .navbar-brand {
+  width: 10%;
+}
+#home-sec .nav.scrolled .navbar {
+  background-color: rgba(255, 255, 255, 0.776);
+}
 #home-sec .nav .navbar-brand {
   width: 8%;
+  transition-duration: 0.5s;
 }
 #home-sec .nav .dropdown-toggle::after {
   display: none;
@@ -12260,6 +12271,10 @@ section .title {
   width: fit-content;
   margin: auto;
   position: relative;
+}
+section .title.mouse-entered::after {
+  width: 100%;
+  left: 0%;
 }
 section .title::after {
   content: "";

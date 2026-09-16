@@ -19,6 +19,13 @@ section {
     width: fit-content;
     margin: auto;
     position: relative;
+    &.mouse-entered{
+         &::after {
+    width: 100%;
+    left: 0%;
+    }
+
+    }
     &::after {
     content: "";
     display: block;
@@ -27,7 +34,7 @@ section {
     position: absolute;
     bottom: -10px;
     left: 35%;
-    background-color: #ee5e00;
+    background-color: $secondColor;
     transition-duration: .5s;
     border-radius: 30px;}
 

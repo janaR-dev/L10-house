@@ -1,3 +1,12 @@
+function navUpdate(){
+    if(window.scrollY > 3){
+        $('.nav').addClass('scrolled');
+    }else{
+        $('.nav').removeClass('scrolled');
+    }
+}
+
+
 function renderServices(data) {
     let $container = $('#services .container .row');
     let index = 0
