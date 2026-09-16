@@ -1,6 +1,9 @@
 @use '../abstracts/shares.scss' as *;
 
 #home-sec {
+    @include responsive(350) {    padding-inline: 0px;
+}
+
     height: 100vh;
     position: relative;
 

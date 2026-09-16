@@ -12090,6 +12090,11 @@ textarea.form-control-lg {
     opacity: 0.2;
   }
 }
+@media (max-width: 1300px) {
+  #home-sec {
+    padding-inline: 0px;
+  }
+}
 #home-sec {
   height: 100vh;
   position: relative;
