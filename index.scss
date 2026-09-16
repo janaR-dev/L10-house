@@ -6,3 +6,48 @@
 @use './styles/components/contact.scss';
 @use './styles/components/services.scss';
 @use './styles/components/about_us.scss';
+
+/* Base styles */
+.text-anim__wrapper {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+  vertical-align: top;
+  overflow: hidden;
+  transition: width 0.3s ease-in-out; /* Add transition here */
+}
+
+.text-anim__word {
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.text-anim__word--in {
+  position: relative;
+  opacity: 1;
+  visibility: visible;
+  padding-right: 5px;
+}
+
+/* Clip Variant Effect */
+.text-anim--clip .text-anim__wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background-color: currentColor;
+}
+
+.text-anim--clip .text-anim__word {
+  opacity: 1;
+}
+
+.text-anim--clip .text-anim__word:not(.text-anim__word--in) {
+  opacity: 0;
+}

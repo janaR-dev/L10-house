@@ -1,5 +1,11 @@
-import './scripts/plugins/jq'
-import './scripts/plugins/plugins-init'
-import './scripts/vars'
-import './scripts/apis';
-import './scripts//funs';
+fetchServicesData();
+fetchSectors();
+fetchLanguages();
+$('.popup').hide();
+
+$( '.popup' ).on( "click", function() {
+    $( this ).fadeOut(); 
+});
+$( '.popup .box' ).on( "click", function( event ) {
+    event.stopPropagation();
+});

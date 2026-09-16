@@ -1,1 +1,11 @@
-@use '../abstracts/shares.scss' as *
+@use '../abstracts/shares.scss' as *;
+
+#about-us{
+
+background-color: white;
+img{
+    border-radius: 40px;
+}
+
+
+}

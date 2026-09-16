@@ -1,0 +1,9 @@
+@mixin animated-moves($end: 0px, $time: 1s) {
+    --end-position: #{$end};
+
+    animation-name: animate-move;
+    animation-duration: $time;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
