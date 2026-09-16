@@ -108,7 +108,12 @@
         }
 
         .dropdown-menu {
-            transform: translateX(-50%);
+            @include responsive(350) {text-align: center;}
+
+
+
+@include responsive(1050) {transform: translateX(-50%);}
+            
         }
 
         .nav-link {

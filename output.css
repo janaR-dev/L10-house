@@ -12185,8 +12185,15 @@ textarea.form-control-lg {
 #home-sec .nav .dropdown-toggle::after {
   display: none;
 }
-#home-sec .nav .dropdown-menu {
-  transform: translateX(-50%);
+@media (max-width: 1300px) {
+  #home-sec .nav .dropdown-menu {
+    text-align: center;
+  }
+}
+@media (min-width: 992px) and (max-width: 1300px) {
+  #home-sec .nav .dropdown-menu {
+    transform: translateX(-50%);
+  }
 }
 #home-sec .nav .nav-link {
   color: #719f3d;
@@ -12829,7 +12836,7 @@ section h2 {
 #services #Video {
   width: 100%;
   height: 300px;
-  background-image: url(./images/images/video-bg.jpg);
+  background-image: url("./images/images/video-bg.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
